@@ -1,0 +1,10 @@
+.c9/
+.git/
+src/*.o
+src/*.cbp
+src/main
+src/shell
+src/Log710Shell2
+archive/
+cmake-build-debug/
+.idea/
