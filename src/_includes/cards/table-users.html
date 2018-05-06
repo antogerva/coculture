@@ -6,7 +6,7 @@
 				<th class="text-center w-1"><i class="icon-people"></i></th>
 				<th>User</th>
 				<th>Usage</th>
-				<th class="text-center">Payment</th>
+				<!-- <th class="text-center">Payment</th> -->
 				<th>Activity</th>
 				<th class="text-center">Satisfaction</th>
 				<th class="text-center"><i class="icon-settings"></i></th>
@@ -44,9 +44,9 @@
 						     aria-valuenow="{{ percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</td>
-				<td class="text-center">
+				<!-- <td class="text-center">
 					<i class="payment payment-{% cycle 'visa', 'googlewallet', 'mastercard', 'shopify', 'ebay', 'paypal' %}"></i>
-				</td>
+				</td> -->
 				<td>
 					<div class="small text-muted">Last login</div>
 					<div>{{ site.time | date: "%s" | minus: time_offset | to_pretty_time }}</div>
