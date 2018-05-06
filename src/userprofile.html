@@ -13,21 +13,24 @@ layout: default
   <div class="row">
     <div class="col-lg-4">
       {% include cards/profile.html %}
-      {% include cards/profile-2.html %}
-    </div>
-
-
-
-
-
-
-    <div class="col-lg-8">
-
-      {% include cards/chart.html height=12 title="Chart title" id="chart-pie" data="pie" %}
-
-
 
     </div>
+
+
+
+
+
+
+    <div class="col-lg-4">
+      {% include cards/chart.html height=12 title="Mes Activités" id="chart-pie" data="pie" %}
+    </div>
+    <div class="col-sm-12 col-lg-4">
+    {% include cards/chart.html title="Mes plantes" id="chart-bar-stacked" data="bar-stacked" %}
+    </div>
+    <div class="col-sm-12">
+      {% include cards/invoices.html %}
+    </div>
+
 
   </div>
 </div>

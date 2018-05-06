@@ -1,61 +1,61 @@
 -
   invoice: "00450"
-  name: Design Works
-  client: Carlson Limited
+  name: Sherbrooke
+  client: Jacques Dupuis
   vat-no: 87956621
-  date: 15 Dec 2017
+  date: 15 Déc 2017
   status: success
-  status-name: Paid
+  status-name: Disponible
   price: $887
 
 -
   invoice: "00450"
-  name: UX Wireframes
-  client: Adobe
+  name: Georges-Vanier
+  client: Maxime Armand
   vat-no: 87956421
-  date: 12 Apr 2017
+  date: 12 Avr 2017
   status: warning
-  status-name: Pending
+  status-name: Presque complet
   price: $1200
 
 -
   invoice: "00452"
-  name: New Dashboard
-  client: Bluewolf
+  name: Panet
+  client: Guillaume Lavallé
   vat-no: 87952621
   date: 23 Oct 2017
   status: warning
-  status-name: Pending
+  status-name: Presque complet
   price: $534
 
 -
   invoice: "00450"
-  name: Landing Page
-  client: Salesforce
+  name: Versailles
+  client: Steve Larose
   vat-no: 87953421
   date: 2 Sep 2017
   status: secondary
-  status-name: Due in 2 Weeks
+  status-name: En attente
   price: $1500
 
 -
   invoice: "00450"
-  name: Marketing Templates
-  client: Printic
+  name: Babylone
+  client: Marie Maire
   vat-no: 87956621
   date: 29 Jan 2018
   status: danger
-  status-name: Paid Today
+  status-name: Complet
   price: $648
 
 -
   invoice: "00450"
-  name: Sales Presentation
-  client: Tabdaq
+  name: Champdoré
+  client: Josiane Doré
   vat-no: 87956621
   date: 4 Feb 2018
   status: secondary
-  status-name: Due in 3 Weeks
+  status-name: En attente
   price: $300
 
 -
