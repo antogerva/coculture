@@ -1,8 +1,11 @@
 .header {
-	padding-top: .75rem;
-	padding-bottom: .75rem;
-	background: #fff;
-	border-bottom: 1px solid $border-color;
+	padding-top: 20px!important;
+	padding-bottom:20px!important;
+	background: #0AC400;
+	position: fixed;
+	width: 100vw;
+	z-index: 9999;
+
 
 	body.fixed-header & {
 		position: fixed;

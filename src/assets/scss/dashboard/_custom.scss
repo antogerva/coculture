@@ -1,0 +1,45 @@
+
+/* CUSTOM CSS */
+.pagetit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  padding: 0!important;
+  font-size: 24px;
+  background-image: url("http://frill-s.com/coculture/photos/10.jpg");
+  min-width: 100vw!important;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0!important;
+  padding: 0!important;
+  position:absolute;
+  background-color: #0ac400;
+  background-blend-mode: multiply;
+  top:60px;
+  left:0;
+  color: white;
+}
+.teamlist{
+  display: flex;
+  flex-direction: row;
+}
+.teamlist span{
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+}
+.pagetit a{
+  margin-right: 10px;
+}
+.header .text-muted{
+    color: white!important;
+}
+.header .text-default{
+  color: white!important;
+  font-weight: 600;
+  height: 100px;
+}
+/* END OF CUSTOM CSS */
