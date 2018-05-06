@@ -4,10 +4,10 @@
 			<thead>
 			<tr>
 				<th class="text-center w-1"><i class="icon-people"></i></th>
-				<th>User</th>
+				<th>Utilisateur</th>
 				<th>Usage</th>
 				<!-- <th class="text-center">Payment</th> -->
-				<th>Activity</th>
+				<th>Activité</th>
 				<th class="text-center">Satisfaction</th>
 				<th class="text-center"><i class="icon-settings"></i></th>
 			</tr>
@@ -27,7 +27,7 @@
 				<td>
 					<div>{{ user.name }} {{ user.surname }}</div>
 					<div class="small text-muted">
-						Registered: {{ site.time | date: "%s" | minus: register_offset | date: '%b %-d, %Y' }}
+						Inscrit: {{ site.time | date: "%s" | minus: register_offset | date: '%b %-d, %Y' }}
 					</div>
 				</td>
 				<td>
@@ -48,7 +48,7 @@
 					<i class="payment payment-{% cycle 'visa', 'googlewallet', 'mastercard', 'shopify', 'ebay', 'paypal' %}"></i>
 				</td> -->
 				<td>
-					<div class="small text-muted">Last login</div>
+					<div class="small text-muted">Dernière connexion</div>
 					<div>{{ site.time | date: "%s" | minus: time_offset | to_pretty_time }}</div>
 				</td>
 				<td class="text-center">

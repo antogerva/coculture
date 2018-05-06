@@ -1019,8 +1019,8 @@
     pin: 7658
     security: 203
   photo: demo/faces/female/26.jpg
-- name: Michelle
-  surname: Schultz
+- name: Mélanie
+  surname: Samson
   gender: female
   region: United States
   age: 22
@@ -1031,16 +1031,16 @@
     mdy: 03/19/1995
     raw: 795626142
   email: michelle95@example.com
-  username: michelle95
-  password: Schultz95*+
+  username: melanie95
+  password: Samson95*+
   credit_card:
     expiration: 10/19
     number: 5708-3279-7951-1648
     pin: 2296
     security: 583
   photo: demo/faces/female/17.jpg
-- name: Crystal
-  surname: Austin
+- name: Christine
+  surname: Bertrand
   gender: female
   region: United States
   age: 32
@@ -1050,17 +1050,17 @@
     dmy: 01/02/1985
     mdy: 02/01/1985
     raw: 476095715
-  email: crystal-85@example.com
-  username: crystal-85
-  password: Austin85++
+  email: christine-85@example.com
+  username: christine-85
+  password: Bertrand85++
   credit_card:
     expiration: 8/21
     number: 1953-8442-3725-5930
     pin: 9458
     security: 565
   photo: demo/faces/female/21.jpg
-- name: Douglas
-  surname: Ray
+- name: Damien
+  surname: Raymond
   gender: male
   region: United States
   age: 34
@@ -1070,9 +1070,9 @@
     dmy: 11/07/1983
     mdy: 07/11/1983
     raw: 426796693
-  email: douglas-ray@example.com
-  username: douglas-ray
-  password: Ray83#^
+  email: damien-raymond@example.com
+  username: damien-rayond
+  password: Raymond83#^
   credit_card:
     expiration: 7/25
     number: 4252-3074-3609-8065
@@ -1119,8 +1119,8 @@
     pin: 2434
     security: 768
   photo: demo/faces/female/4.jpg
-- name: Carol
-  surname: Henderson
+- name: Tina
+  surname: Medina
   gender: female
   region: United States
   age: 23
@@ -1139,8 +1139,8 @@
     pin: 2015
     security: 842
   photo: demo/faces/female/27.jpg
-- name: Christopher
-  surname: Harvey
+- name: Christophe
+  surname: Latreille
   gender: male
   region: United States
   age: 33

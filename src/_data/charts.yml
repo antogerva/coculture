@@ -225,16 +225,16 @@ pie:
   type: pie
   hide-legend: true
   series:
-    - name: A
+    - name: Arrosage
       color: blue-darker
       data: [63]
-    - name: B
+    - name: Paysagement
       color: blue
       data: [44]
-    - name: C
+    - name: Engagement
       color: blue-light
       data: [12]
-    - name: D
+    - name: Troc
       color: blue-lighter
       data: [14]
 
