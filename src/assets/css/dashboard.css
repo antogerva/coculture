@@ -8,6 +8,7 @@ Dashboard UI
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 :root {
   --blue: #467fcf;
   --indigo: #6574cd;
@@ -11617,6 +11618,42 @@ a.icon:hover {
 }
 
 /* CUSTOM CSS */
+.homenu {
+  max-width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.homenuitem {
+  width: 33%;
+  height: 26vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #0ac400;
+}
+
+.homenuitem h3 {
+  margin-top: 30px;
+}
+
+.homenuitem img {
+  height: 60px;
+}
+
 .pagetit {
   display: -ms-flexbox;
   display: flex;
@@ -11642,6 +11679,10 @@ a.icon:hover {
   top: 60px;
   left: 0;
   color: white;
+}
+
+.pagetit .avatar {
+  box-shadow: none !important;
 }
 
 .teamlist {
@@ -11671,6 +11712,182 @@ a.icon:hover {
   color: white !important;
   font-weight: 600;
   height: 100px;
+}
+
+.nav-link i {
+  color: white !important;
+}
+
+.header-toggler {
+  display: none;
+}
+
+.todocont {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.todorow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.todoicon {
+  width: 100px;
+}
+
+.todoicon img {
+  max-height: 40px;
+}
+
+.tododesc {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.todouser {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.tododue {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.tododone {
+  width: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.md-checkbox {
+  position: relative;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.md-checkbox.md-checkbox-inline {
+  display: inline-block;
+}
+
+.md-checkbox label {
+  cursor: pointer;
+}
+
+.md-checkbox label:before, .md-checkbox label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.md-checkbox label:before {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.md-checkbox input[type="checkbox"] {
+  outline: 0;
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #337ab7;
+  border: none;
+}
+
+.md-checkbox input[type="checkbox"]:checked + label:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.md-checkbox input[type="checkbox"]:disabled + label:before {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+
+.md-checkbox input[type="checkbox"]:disabled:checked + label:before {
+  background: rgba(0, 0, 0, 0.26);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+section {
+  background: white;
+  margin: 0 auto;
+  padding: 4em;
+  max-width: 800px;
+}
+
+section h1 {
+  margin: 0 0 2em;
+}
+
+@media only screen and (max-width: 850px) {
+  .homenu {
+    margin: 100px 0px;
+  }
+  .homenuitem {
+    width: 50%;
+    height: 35vh;
+  }
+  .todorow {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .todoicon {
+    width: 55px;
+  }
+  .tododesc {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
 }
 
 /* END OF CUSTOM CSS */

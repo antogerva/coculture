@@ -11,3 +11,5 @@ deploy-site
 /commits.sh
 _site/
 
+
+dist/assets/css/dashboard\.css

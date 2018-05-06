@@ -8,26 +8,95 @@ menu: index
 <div class="container">
 
 	<!-- {% include page-title.html title="Mes Jardins > Jardin d'ici" %} -->
+	<div class="pagenav">
+		<!-- <a href="#">Mes Jardins </a> -->
+		<a href=#>Mon jardin</a>
+	</div>
 
 	<div class="pagetit">
 		<!-- <a href="#">Mes Jardins </a> -->
 		<h1>Jardin Pictout</h1>
 		<p>7639 blvd Des Lorimiers</p>
-		<div class="teamlist">
-			<span class="avatar avatar-xl" style="background-image: url(./demo/faces/male/2.jpg)"></span>
-		<span class="avatar avatar-xl" style="background-image: url(./demo/faces/female/2.jpg)"></span>
-		<span class="avatar avatar-xl" style="background-image: url(./demo/faces/male/6.jpg)"></span>
-	</div>
+		<div class="avatar-list avatar-list-stacked">
+  <span class="avatar" style="background-image: url(./demo/faces/female/12.jpg)"></span>
+  <span class="avatar" style="background-image: url(./demo/faces/female/21.jpg)"></span>
+  <span class="avatar" style="background-image: url(./demo/faces/female/29.jpg)"></span>
+  <span class="avatar" style="background-image: url(./demo/faces/female/2.jpg)"></span>
+  <span class="avatar" style="background-image: url(./demo/faces/male/34.jpg)"></span>
+  <span class="avatar">+8</span>
+</div>
 	</div>
 
-	<div class="row row-cards" style="margin-top: 55vh;">
+	<div class="row row-cards" style="margin-top: 49vh;">
 		<div class="col-sm-12 alert alert-icon alert-danger" role="alert">
   <i class="fe fe-alert-triangle mr-2" aria-hidden="true"></i> Attention: Des rafales de 117 km/h au Québec. Pensez à protéger vos plantes.
 </div>
-		<div class="col-sm-12">
+</div>
+	<div class="row row-cards row-deck">
+		<div class="col-xl-6 col-sm-12">
+		<div class="card">
+		<div class="card-header">
+		<h3 class="card-title">Tâches à faire</h3>
+		</div>
+		<div class="card-body todocont">
+			<div class="todorow">
+				<div class="todoicon"><img src="http://frill-s.com/coculture/logos/water.png"></div>
+					<div class="tododesc">Arroser</div>
+						<div class="todouser"><span class="avatar" style="background-image: url(./demo/faces/male/21.jpg)"></span></div>
+							<div class="tododue"><span class="tag tag-orange">~5 jours</span></div>
+							<div class="tododone">
+								<div class="md-checkbox">
+    <input id="i2" type="checkbox" unchecked>
+    <label for="i2"></label>
+  </div>
+							</div>
+			</div>
+				<div class="todorow">
+					<div class="todoicon"><img src="http://frill-s.com/coculture/logos/cut.png"></div>
+						<div class="tododesc">Trimmer</div>
+							<div class="todouser"><span class="avatar" style="background-image: url(./demo/faces/male/24.jpg)"></span></div>
+								<div class="tododue"><span class="tag tag-yellow">~15 jours</span></div>
+								<div class="tododone">
+									<div class="md-checkbox">
+	    <input id="i3" type="checkbox" unchecked>
+	    <label for="i3"></label>
+	  </div>
+								</div>
+				</div>
+					<div class="todorow">
+						<div class="todoicon"><img src="http://frill-s.com/coculture/logos/shovel.png"></div>
+							<div class="tododesc">Paysagement</div>
+								<div class="todouser"><span class="avatar" style="background-image: url(./demo/faces/female/21.jpg)"></span></div>
+									<div class="tododue"><span class="tag tag-green">~5 semaines</span></div>
+									<div class="tododone">
+										<div class="md-checkbox">
+		    <input id="i4" type="checkbox" unchecked>
+		    <label for="i4"></label>
+		  </div>
+									</div>
+					</div>
+					<div class="todorow">
+						<div class="todoicon"><img src="http://frill-s.com/coculture/logos/pick.png"></div>
+							<div class="tododesc">Cueuillette</div>
+								<div class="todouser"><span class="avatar" style="background-image: url(./demo/faces/female/11.jpg)"></span></div>
+									<div class="tododue"><span class="tag tag-green">~8 semaines</span></div>
+									<div class="tododone">
+										<div class="md-checkbox">
+		    <input id="i5" type="checkbox" unchecked>
+		    <label for="i5"></label>
+		  </div>
+									</div>
+					</div>
+		</div>
+		</div>
+		</div>
+
+		<div class="col-xl-6 col-sm-12">
 			{% include cards/tasks.html %}
 			{% comment %}{% include cards/tasks.html %}{% endcomment %}
 		</div>
+		</div>
+
 		<div class="col-sm-12">
 			{% include cards/development-activity.html %}
 			{% comment %}{% include cards/tasks.html %}{% endcomment %}
