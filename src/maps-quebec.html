@@ -5,19 +5,44 @@ layout: default
 ---
 
 
+						<script type="text/javascript">
 
-<div class="container">
+						document.addEventListener("DOMContentLoaded", function(event) {
+														document.getElementById('city-select').getElementsByTagName('option')[1].selected = 'selected'
+						});
 
-				<p class="mb-12">
-				</p>
 
-										<p class="mb-4">
+						function handleSelect(elm)
+						{
+						window.location = elm.value+".html";
+						}
+						</script>
 
+						<div class="container">
+
+										<p class="mb-12">
+											&nbsp;
 										</p>
+														<p class="mb-12">
+															&nbsp;
+														</p>
 
-							<p class="mb-4">
-								Jardins alentours
-							</p>
+													<p class="mb-4">
+														Jardins alentours Québec
+													</p>
+
+
+
+
+												<select id="city-select" class="custom-select" onchange="javascript:handleSelect(this)" >
+													<option value="maps-mtl">Montréal</option>
+													<option value="maps-quebec">Québec</option>
+												</select>
+
+
+
+
+
 <!--
 style="height: 35em"
 -->
@@ -29,11 +54,11 @@ style="height: 35em"
 
 					<div class="row">
 
-						<div class="col-lg-12">
-							{% include cards/invoice.html %}
+						<div class="col-sm-12">
+							{% include cards/invoices.html %}
 						</div>
-					</div>
 
+					</div>
 
 
 </div>
