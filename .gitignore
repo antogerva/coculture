@@ -1,6 +1,7 @@
 .idea/
 /node_modules/
 /.sass-cache/
+/_site/
 /.jekyll-metadata
 /.asset-cache/
 .DS_Store

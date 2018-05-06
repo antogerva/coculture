@@ -64,6 +64,51 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+/* CUSTOM CSS */
+.pagetit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  padding: 0!important;
+  font-size: 24px;
+  background-image: url("http://frill-s.com/coculture/photos/10.jpg");
+  min-width: 100vw!important;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0!important;
+  padding: 0!important;
+  position:absolute;
+  background-color: #0ac400;
+  background-blend-mode: multiply;
+  top:60px;
+  left:0;
+  color: white;
+}
+.teamlist{
+  display: flex;
+  flex-direction: row;
+}
+.teamlist span{
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+}
+.pagetit a{
+  margin-right: 10px;
+}
+.header .text-muted{
+    color: white!important;
+}
+.header .text-default{
+  color: white!important;
+  font-weight: 600;
+  height: 100px;
+}
+/* END OF CUSTOM CSS */
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -72,7 +117,7 @@ body {
   line-height: 1.5;
   color: #495057;
   text-align: left;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 [tabindex="-1"]:focus {
@@ -167,14 +212,14 @@ sup {
 }
 
 a {
-  color: #467fcf;
+  color: #0AC400;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #295a9f;
+  color: #0ac400;
   text-decoration: underline;
 }
 
@@ -3876,7 +3921,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #fff #fff #fff;
+  border-color: #e9ecef #e9ecef #dee2e6;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -4349,8 +4394,6 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 40, 100, 0.12);
-  border-radius: 3px;
 }
 
 .card > hr {
@@ -10293,7 +10336,7 @@ body.fixed-header .page {
   padding-top: .75rem;
   padding-bottom: .75rem;
   background: #0AC400;
-
+``
 }
 
 body.fixed-header .header {
@@ -11582,7 +11625,7 @@ button.bg-lime:focus {
 }
 
 .icon {
-  color: #9aa0ac !important;
+  color: #fff !important;
 }
 
 .icon i {
@@ -11659,13 +11702,13 @@ a.icon:hover {
 }
 
 .nav-tabs .nav-link:hover:not(.disabled) {
-  border-color: #6e7687;
-  color: #6e7687;
+  border-color: #fff;
+  color: #fff;
 }
 
 .nav-tabs .nav-link.active {
-  border-color: #467fcf;
-  color: #467fcf;
+  border-color: #fff;
+  color: #fff;
   background: transparent;
 }
 
@@ -13030,8 +13073,9 @@ a.icon:hover {
 }
 
 .card {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   position: relative;
+
   margin-bottom: 1.5rem;
   width: 100%;
 }
