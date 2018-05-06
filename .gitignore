@@ -9,4 +9,5 @@
 generated-site
 deploy-site
 /commits.sh
+_site/
 
