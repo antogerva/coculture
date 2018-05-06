@@ -32,6 +32,10 @@ menu: index
 			{% include cards/development-activity.html %}
 			{% comment %}{% include cards/tasks.html %}{% endcomment %}
 		</div>
+		<!-- <div class="col-lg-6">
+			{% include cards/development-activity.html %}
+			{% comment %}{% include cards/tasks.html %}{% endcomment %}
+		</div> -->
 		<!-- <div class="col-6 col-sm-4 col-lg-2">
 			{% include cards/stats-1.html number=43 title="New Tickets" percentage=6 %}
 		</div>
@@ -50,15 +54,12 @@ menu: index
 		<div class="col-6 col-sm-4 col-lg-2">
 			{% include cards/stats-1.html number=621 title="Products" percentage=-1 %}
 		</div> -->
-		<div class="col-lg-6">
-			{% include cards/development-activity.html %}
-			{% comment %}{% include cards/tasks.html %}{% endcomment %}
-		</div>
 
-		<div class="col-md-6">
+
+		<div class="col-md-12">
 			<div class="alert alert-primary">Are you in trouble? <a href="{{ site.base }}/docs/index.html" class="alert-link">Read our documentation</a> with code samples.</div>
 
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-sm-6">
 					{% include cards/chart.html height=12 title="Chart title" id="chart-donut" data="donut" %}
 				</div>
@@ -72,10 +73,10 @@ menu: index
 					{% include cards/digit.html color="green" title="Today profit" digit="$652" width="84%" %}
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 
-		<div class="col-sm-6 col-lg-3">
+		<!-- <div class="col-sm-6 col-lg-3">
 			{% include cards/icon-box.html color="blue" icon="fe fe-dollar-sign" value="132" description="Sales" subtitle="12 waiting payments" %}
 		</div>
 		<div class="col-sm-6 col-lg-3">
@@ -87,7 +88,7 @@ menu: index
 		<div class="col-sm-6 col-lg-3">
 			{% include cards/icon-box.html color="yellow" icon="fe fe-message-square" value="132" description="Comments" subtitle="16 waiting" %}
 		</div>
-	</div>
+	</div> -->
 
 	<div class="row row-cards row-deck">
 		{% for article in site.data.articles limit: 2 %}
@@ -109,7 +110,7 @@ menu: index
 		<div class="col-sm-6 col-lg-4">
 			{% include cards/projects-list.html %}
 		</div>
-		<div class="col-md-6 col-lg-4">
+		<!-- <div class="col-md-6 col-lg-4">
 			{% include cards/members.html %}
 		</div>
 
@@ -126,7 +127,7 @@ menu: index
 				</div>
 				<div class="col-sm-6 col-lg-3">
 					{% include cards/chart-bg.html id="chart-bg-users-4" offset=40 color="yellow" rate="9%" %}
-				</div>
+				</div> -->
 			</div>
 		</div>
 
