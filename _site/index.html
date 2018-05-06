@@ -19,7 +19,7 @@
 <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 
-<!-- Generated: 2018-05-05 20:20:20 -0400 -->
+<!-- Generated: 2018-05-05 21:22:16 -0400 -->
 
 <title>coculture - tabler.github.io - a responsive, flat and full featured admin template</title>
 
@@ -171,6 +171,9 @@
 	</div>
 
 	<div class="row row-cards" style="margin-top: 55vh;">
+		<div class="col-sm-12 alert alert-icon alert-danger" role="alert">
+  <i class="fe fe-alert-triangle mr-2" aria-hidden="true"></i> Attention: Des rafales de 117 km/h au Québec. Pensez à protéger vos plantes.
+</div>
 		<div class="col-sm-12">
 			<div class="card">
 	<div class="card-header">
@@ -899,10 +902,10 @@ require(['c3', 'jquery'], function(c3, $) {
 			<thead>
 			<tr>
 				<th class="text-center w-1"><i class="icon-people"></i></th>
-				<th>User</th>
+				<th>Jardinier</th>
 				<th>Usage</th>
 				<!-- <th class="text-center">Payment</th> -->
-				<th>Activity</th>
+				<th>Activité</th>
 				<th class="text-center">Satisfaction</th>
 				<th class="text-center"><i class="icon-settings"></i></th>
 			</tr>
@@ -1034,7 +1037,7 @@ require(['c3', 'jquery'], function(c3, $) {
 				<td>
 					<div>Crystal Austin</div>
 					<div class="small text-muted">
-						Registered: Apr 26, 2018
+						Registered: Apr 27, 2018
 					</div>
 				</td>
 				<td>
@@ -1367,43 +1370,55 @@ require(['c3', 'jquery'], function(c3, $) {
 		</div>
 
 		<div class="col-sm-6 col-lg-4">
-			<div class="card">
+		<div class="card">
 	<div class="card-header">
-		<h4 class="card-title">Browser Stats</h4>
+		<h3 class="card-title">Température Moyenne</h3>
 	</div>
-	<table class="table card-table">
-		<tr>
-			<td width="1"><i class="fa fa-chrome text-muted"></i></td>
-			<td>Google Chrome</td>
-			<td class="text-right"><span class="text-muted">23%</span></td>
-		</tr>
-		<tr>
-			<td><i class="fa fa-firefox text-muted"></i></td>
-			<td>Mozila Firefox</td>
-			<td class="text-right"><span class="text-muted">15%</span></td>
-		</tr>
-		<tr>
-			<td><i class="fa fa-safari text-muted"></i></td>
-			<td>Apple Safari</td>
-			<td class="text-right"><span class="text-muted">7%</span></td>
-		</tr>
-		<tr>
-			<td><i class="fa fa-internet-explorer text-muted"></i></td>
-			<td>Internet Explorer</td>
-			<td class="text-right"><span class="text-muted">9%</span></td>
-		</tr>
-		<tr>
-			<td><i class="fa fa-opera text-muted"></i></td>
-			<td>Opera mini</td>
-			<td class="text-right"><span class="text-muted">23%</span></td>
-		</tr>
-		<tr>
-			<td><i class="fa fa-edge text-muted"></i></td>
-			<td>Microsoft edge</td>
-			<td class="text-right"><span class="text-muted">9%</span></td>
-		</tr>
-	</table>
+	<div class="card-body">
+		<div id="chart-temperature" style="height: 15rem;"></div>
+	</div>
 </div>
+<script>
+require(['c3', 'jquery'], function(c3, $) {
+	$(document).ready(function(){
+		var chart = c3.generate({
+			bindto: '#chart-temperature', // id of chart wrapper
+			data: {
+				columns: [
+				    // each columns data
+					['data1', 7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+					['data2', 3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+				],
+				labels: true,
+				type: 'line', // default type of chart
+				colors: { 
+					'data1': tabler.colors["blue"],
+					'data2': tabler.colors["green"]
+				},
+				names: {
+				    // name of each serie
+					'data1': 'Tokyo',
+					'data2': 'London'
+				}
+			},
+			axis: {
+				x: {
+					type: 'category',
+					// name of each category
+					categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+				},
+			},
+			legend: {
+                show: false, //hide legend
+			},
+			padding: {
+				bottom: 0,
+				top: 0
+			},
+		});
+	});
+});
+</script>
 		</div>
 		<div class="col-sm-6 col-lg-4">
 			<div class="card">
@@ -1939,8 +1954,101 @@ require(['c3', 'jquery'], function (c3, $) {
 			</div>
 		</div>
 
-		<div class="col-12">
+		<div class="col-sm-12">
 			<div class="card">
+	<div class="card-header">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Message">
+			<div class="input-group-append">
+				<button type="button" class="btn btn-secondary">
+					<i class="fe fe-camera"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<ul class="list-group card-list-group">
+		<li class="list-group-item py-5">
+			<div class="media">
+				<div class="media-object avatar avatar-md mr-4" style="background-image: url(demo/faces/male/16.jpg)"></div>
+				<div class="media-body">
+					<div class="media-heading">
+						<small class="float-right text-muted">4 min</small>
+						<h5>Peter Proulx</h5>
+					</div>
+
+					<div>
+						Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras
+						justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes,
+						nascetur ridiculus mus.
+					</div>
+
+					<ul class="media-list">
+						<li class="media mt-4">
+							<div class="media-object avatar mr-4" style="background-image: url(demo/faces/female/17.jpg)"></div>
+							<div class="media-body">
+								<strong>Debra Desjardins: </strong>
+								Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus
+								auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+							</div>
+						</li>
+						<li class="media mt-4">
+							<div class="media-object avatar mr-4" style="background-image: url(demo/faces/male/32.jpg)"></div>
+							<div class="media-body">
+								<strong>Jack Trudeau: </strong>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+								amet risus.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li class="list-group-item py-5">
+			<div class="media">
+				<div class="media-object avatar avatar-md mr-4" style="background-image: url(demo/faces/male/16.jpg)"></div>
+				<div class="media-body">
+					<div class="media-heading">
+						<small class="float-right text-muted">12 min</small>
+						<h5>Peter Proulx</h5>
+					</div>
+					<div>
+						Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis
+						parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="list-group-item py-5">
+			<div class="media">
+				<div class="media-object avatar avatar-md mr-4" style="background-image: url(demo/faces/male/16.jpg)"></div>
+				<div class="media-body">
+					<div class="media-heading">
+						<small class="float-right text-muted">34 min</small>
+						<h5>Peter Proulx</h5>
+					</div>
+
+					<div>
+						Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+						venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+					</div>
+
+					<ul class="media-list">
+						<li class="media mt-4">
+							<div class="media-object avatar mr-4" style="background-image: url(demo/faces/male/26.jpg)"></div>
+							<div class="media-body">
+								<strong>Wayne Gauthier: </strong>
+								Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus
+								auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+			<!-- <div class="card">
 	<div class="card-header">
 		<h3 class="card-title">Invoices</h3>
 	</div>
@@ -2146,7 +2254,7 @@ require(['c3', 'jquery'], function (c3, $) {
 			</tbody>
 		</table>
 	</div>
-</div>
+</div> -->
 		</div>
 	</div>
 </div>

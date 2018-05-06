@@ -64,51 +64,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-/* CUSTOM CSS */
-.pagetit{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  padding: 0!important;
-  font-size: 24px;
-  background-image: url("http://frill-s.com/coculture/photos/10.jpg");
-  min-width: 100vw!important;
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-  margin: 0!important;
-  padding: 0!important;
-  position:absolute;
-  background-color: rgba(10,196,0,0.6);
-  background-blend-mode: multiply;
-  top:60px;
-  left:0;
-  color: white;
-}
-.teamlist{
-  display: flex;
-  flex-direction: row;
-}
-.teamlist span{
-  display: flex;
-  flex-direction: row;
-  margin: 0 10px;
-}
-.pagetit a{
-  margin-right: 10px;
-}
-.header .text-muted{
-    color: white!important;
-}
-.header .text-default{
-  color: white!important;
-  font-weight: 600;
-  height: 100px;
-}
-/* END OF CUSTOM CSS */
-
 body {
   margin: 0;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -117,7 +72,7 @@ body {
   line-height: 1.5;
   color: #495057;
   text-align: left;
-  background-color: #f2f2f2;
+  background-color: #f5f7fb;
 }
 
 [tabindex="-1"]:focus {
@@ -212,14 +167,14 @@ sup {
 }
 
 a {
-  color: #0AC400;
+  color: #467fcf;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #0ac400;
+  color: #295a9f;
   text-decoration: underline;
 }
 
@@ -4394,6 +4349,8 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
+  border: 1px solid rgba(0, 40, 100, 0.12);
+  border-radius: 3px;
 }
 
 .card > hr {
@@ -9919,6 +9876,51 @@ html {
   direction: ltr;
 }
 
+/* CUSTOM CSS */
+.pagetit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  padding: 0!important;
+  font-size: 24px;
+  background-image: url("http://frill-s.com/coculture/photos/10.jpg");
+  min-width: 100vw!important;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0!important;
+  padding: 0!important;
+  position:absolute;
+  background-color: #0ac400;
+  background-blend-mode: multiply;
+  top:60px;
+  left:0;
+  color: white;
+}
+.teamlist{
+  display: flex;
+  flex-direction: row;
+}
+.teamlist span{
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+}
+.pagetit a{
+  margin-right: 10px;
+}
+.header .text-muted{
+    color: white!important;
+}
+.header .text-default{
+  color: white!important;
+  font-weight: 600;
+  height: 100px;
+}
+/* END OF CUSTOM CSS */
+
 body {
   direction: ltr;
   -webkit-font-smoothing: antialiased;
@@ -10335,8 +10337,8 @@ body.fixed-header .page {
 .header {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  background: #0AC400;
-``
+  background: #0AC400!important;
+  border-bottom: 1px solid rgba(0, 40, 100, 0.12);
 }
 
 body.fixed-header .header {
@@ -10428,7 +10430,7 @@ body.fixed-header .header {
   width: 2rem;
   height: 2rem;
   position: relative;
-  color: #fff;
+  color: #9aa0ac;
 }
 
 .header-toggler:hover {
@@ -11625,7 +11627,7 @@ button.bg-lime:focus {
 }
 
 .icon {
-  color: #fff !important;
+  color: #9aa0ac !important;
 }
 
 .icon i {
@@ -11687,7 +11689,7 @@ a.icon:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
+  color: #9aa0ac;
   margin: 0 -.75rem;
 }
 
@@ -11702,13 +11704,13 @@ a.icon:hover {
 }
 
 .nav-tabs .nav-link:hover:not(.disabled) {
-  border-color: #fff;
-  color: #fff;
+  border-color: #6e7687;
+  color: #6e7687;
 }
 
 .nav-tabs .nav-link.active {
-  border-color: #fff;
-  color: #fff;
+  border-color: #467fcf;
+  color: #467fcf;
   background: transparent;
 }
 
@@ -11751,7 +11753,7 @@ a.icon:hover {
 .nav-tabs .nav-submenu .nav-item {
   display: block;
   padding: .5rem 1rem;
-  color: #fff;
+  color: #9aa0ac;
   margin: 0 !important;
   cursor: pointer;
   transition: .3s background;
@@ -13073,9 +13075,8 @@ a.icon:hover {
 }
 
 .card {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   position: relative;
-
   margin-bottom: 1.5rem;
   width: 100%;
 }
