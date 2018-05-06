@@ -23,10 +23,10 @@ menu: gallery
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="row row-cards">
 
-		{% for photo in site.data.photos limit: 12 offset: 20 %}
+		{% for photo in site.data.photos limit: 6 offset: 20 %}
 		<div class="col-sm-6 col-lg-4">
 			{% assign user = site.data.users[forloop.index] %}
 			<div class="card p-3">
@@ -50,5 +50,5 @@ menu: gallery
 
 
 	</div>
-	
+
 </div>
